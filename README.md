@@ -14,12 +14,12 @@ This project is a professional-grade command-line calculator application develop
 
 ## Setup
 
-1. Clone the repository:
+## Clone the repository:
 
    git clone <https://github.com/eddysantana16/calculator.git>
    cd calculator
    
-2. Create and activate a virtual environment:
+## Create and activate a virtual environment:
 
     python -m venv venv
     # Windows
@@ -27,11 +27,11 @@ This project is a professional-grade command-line calculator application develop
     # macOS/Linux
     source venv/bin/activate
 
-3. Install dependencies:
+## Install dependencies:
 
     pip install -r requirements.txt
 
-4. Run the application:
+## Run the application:
 
     python main.py
         You'll see a welcome message and prompt to enter commands or operations.
@@ -50,28 +50,31 @@ This project is a professional-grade command-line calculator application develop
 
             exit – quit the application
 
-5. Testing
+## Testing
 
     Run tests with coverage:
 
         pytest --cov=app tests/
 
-6. Project Structure
+## Project Structure
+```
+calculator/
+├── app/
+│   ├── calculator/
+│   ├── calculation/
+│   ├── operation/
+├── tests/
+├── .github/
+│   └── workflows/
+├── main.py
+├── requirements.txt
+├── README.md
+├── pytest.ini
+```
 
-    calculator/
-        ├── app/
-        │   ├── calculator/
-        │   ├── calculation/
-        │   ├── operation/
-        ├── tests/
-        ├── .github/
-        │   └── workflows/
-        ├── main.py
-        ├── requirements.txt
-        ├── README.md
-        ├── pytest.ini
+## Continuous Integration: 
 
-7. Continuous Integration: GitHub Actions are configured to run tests and enforce 100% coverage on every push or pull request.
+GitHub Actions are configured to run tests and enforce 100% coverage on every push or pull request.
 
 ## License
 
